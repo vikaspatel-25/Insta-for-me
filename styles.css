@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'instagram';
+    src: url('/instagram.ttf');
+}
+
+:root {
+    --primary-color: #13191e;
+    --border-color: #393a3f50; 
+    --container-color: #0c0f14;
+}
+
+* {
+    -webkit-tap-highlight-color: #0c0f1460 !important;
+    -webkit-focus-ring-color:  #0c0f1460 !important;
+    outline: none !important;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+#body {
+    width: 100%;
+    min-height: 100vh;
+    /* height: fit-content; */
+    max-width: 1080px;
+    background-color: #0d1015;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+#header {
+    height: 65px;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: var(--container-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 2px 1px;
+}
+
+#edit {
+    width: 35px;
+    height: 30px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 12px;
+    margin-top: 3px;
+    right: 0;
+    opacity: 0.7;
+}
+
+#editText {
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+#thp1 {
+    font-family: "instagram";
+    font-size: 26px;
+    color: white;
+}
+
+#TicTacToe {
+    width: fit-content;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 6px;
+    opacity: 1;
+}
+
+#logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    opacity: 1;
+}
+
+#logoimg {
+    height: 30px;
+    opacity: 1;
+}
+
+#container {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--container-color);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer {
+    width: 100%;
+    height: 85px;
+    background-color: var(--container-color);
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px -2px 1px;
+}
+
+#pcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profilediv {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.borderLeft {
+    border-top-left-radius: 25px;
+}
+
+.borderRight {
+    border-top-left-radius: 25px;
+}
+
+.profiles {
+    width: 60px;
+    height: 60px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: #21c062;
+    overflow: hidden;
+    height: 65px;
+    width: 65px;
+}
+
+.profileimg {
+    width: 56px;
+    height: 56px;
+    border-radius: 9999px;
+}
+
+#logonameimg {
+    height: 70px;
+}
+
+#profiledata {
+    width: 100%;
+    height: 140px;
+    border-bottom: solid 2px var(--border-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pdata {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdata2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pdataimgcontainer {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#pdataimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+}
+
+.pname {
+    width: 100%;
+    height: fit-content;
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: aliceblue;
+    opacity: 1;
+}
+
+.pdata2div {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+.metrics {
+    width: 75%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.metricdata {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.metriclabeldata {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: aliceblue;
+    opacity: 0.7;
+    margin-top: 3px;
+}
+
+.nameMetricsContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postcontainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+}
+
+.border {
+    width: 20%;
+    height: 2px;
+    margin-top: 7px;
+    border-radius: 999px;
+}
+
+.postinfo {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postinfo1 {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption {
+    width: fit-content;
+    height: fit-content;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.infoimage {
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    margin-left: 8px;
+}
+
+.infoname {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: white;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.postmetrics {
+    height: 35px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.metricsdiv {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.downloaddiv {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.likebutton {
+    height: 20px;
+}
+
+.likes {
+    width: fit-content;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: aliceblue;
+    opacity: 1;
+    margin-left: 8px;
+}
+
+.sharebutton {
+    margin-left: 16px;
+    height: 17px;
+    margin-bottom: 1px;
+}
+
+.downloadbutton {
+    margin-left: 16px;
+    height: 17px;
+    margin-right: 8px;    
+}
+
+.captioncontainer {
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#postcontent {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
