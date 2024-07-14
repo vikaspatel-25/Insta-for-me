@@ -173,7 +173,7 @@ function corsHandler(event,eventNumber){
         picRequested.src = `images/pathofstoicism.jpg`;
     }
     else if(eventNumber == 1){
-        picRequested.src = `images/anushkasharma.jpg.jpeg`;
+        picRequested.src = `images/anushkasharma.jpg`;
     }
     else if(eventNumber == 2){
         picRequested.src = `images/viratkohli.jpg`;
