@@ -73,6 +73,7 @@ async function fetchProfileData(urlNumber) {
             throw new Error(`Failed to fetch data from ${url}: ${response.statusText}`);
         }
         const urldata = await response.json();
+        
         const profileInfo = {
             name: urldata.data.full_name,
             followers: convertToMillionOrThousand(urldata.data.follower_count),
@@ -112,6 +113,7 @@ async function fetchPostData(postUrlNum) {
             throw new Error(`Failed to fetch data from ${url}: ${response.statusText}`);
         }
         const rawData = await response.json();
+        console.log(rawData);
         const count = rawData.data.count;
         let postNumber = -1;
         let postDataHolder = [];
