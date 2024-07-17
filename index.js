@@ -18,7 +18,7 @@ const loading = document.querySelector("#loading");
 
 // API URLs for profiledata
 const urls = [
-    'https://instagram-scraper-api2.p.rapidapi.com/v1/info?username_or_id_or_url=pathsofstoicism&url_embed_safe=true',
+    'https://instagram-scraper-api2.p.rapidapi.com/v1/info?username_or_id_or_url=bhuvan.bam22&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1/info?username_or_id_or_url=anushkasharma&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1/info?username_or_id_or_url=virat.kohli&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1/info?username_or_id_or_url=viratkohlistuffs&url_embed_safe=true'
@@ -172,7 +172,7 @@ function createPostContainers(profileNumber) {
 function corsHandler(event,eventNumber){
     let = picRequested = event.target;
     if(eventNumber == 0){
-        picRequested.src = `images/pathofstoicism.jpg`;
+        picRequested.src = `images/bhuvanbam.jpg`;
     }
     else if(eventNumber == 1){
         picRequested.src = `images/anushkasharma.jpg`;
