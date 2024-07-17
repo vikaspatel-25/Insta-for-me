@@ -26,7 +26,7 @@ const urls = [
 
 // API URLs for posts
 const postUrls = [
-    'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=pathsofstoicism&url_embed_safe=true',
+    'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=bhuvan.bam22&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=anushkasharma&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=virat.kohli&url_embed_safe=true',
     'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=viratkohlistuffs&url_embed_safe=true'
